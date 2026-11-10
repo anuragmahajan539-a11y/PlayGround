@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#101114"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='27' font-size='27'%3E✳%3C/text%3E%3C/svg%3E"><title>DEEPHOLLOW — The Descent</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="shell">
+<header class="topbar"><a class="brand" href="#" aria-label="Deephollow home"><span class="brand-mark">✳</span> DEEPHOLLOW <span class="brand-sub">THE DESCENT</span></a><div class="top-meta"><span class="live-dot"></span> CO-OP EXPEDITION <span class="divider"></span><span id="seed-label">RUN # —</span></div><button id="sound-btn" class="sound-btn" aria-label="Toggle sound">♫ <span>SOUND OFF</span></button></header>
+<section class="game-layout">
+<aside class="side-panel left-panel"><div class="panel-kicker">YOUR PARTY <span id="party-count">03 / 03</span></div><div id="party-list" class="party-list"></div><div class="panel-rule"></div><div class="panel-kicker">EXPEDITION</div><div class="stat-row"><span>FLOOR</span><strong id="floor-stat">01</strong></div><div class="stat-row"><span>THREATS</span><strong id="threat-stat">—</strong></div><div class="stat-row"><span>RELICS</span><strong id="relic-stat">00</strong></div><div class="floor-progress"><div id="progress-fill"></div></div><p class="tiny-note" id="objective-copy">Clear the floor to find the descent.</p><div class="panel-rule"></div><div class="panel-kicker">RUN RECORD</div><div class="stat-row"><span>BEST FLOOR</span><strong id="best-stat">01</strong></div><div class="stat-row"><span>ELITES SLAIN</span><strong id="elite-stat">00</strong></div></aside>
+<section class="stage-wrap"><div class="stage-heading"><div><div class="eyebrow" id="stage-eyebrow">A PROCEDURAL DESCENT</div><h1 id="stage-title">The Forgotten<br><em>Underneath</em></h1></div><div class="floor-badge"><span>DEPTH</span><strong id="floor-badge">01</strong></div></div>
+<div class="game-frame"><canvas id="game" width="960" height="600" aria-label="Dungeon gameplay"></canvas><div class="canvas-vignette"></div><div id="toast" class="toast"></div><div class="game-hint"><span class="keycap">WASD</span> MOVE <span class="hint-sep">·</span><span class="keycap">CLICK</span> ATTACK <span class="hint-sep">·</span><span class="keycap">SPACE</span> DODGE <span class="hint-sep">·</span><span class="keycap">Q</span> SKILL</div><div id="game-overlay" class="game-overlay"></div></div>
+<div class="bottom-bar"><span id="location-label">◈ THE ENTRY CHAMBER</span><span class="bottom-tip">THE DUNGEON REMEMBERS EVERY STEP</span><span id="party-alive">3 / 3 ALIVE</span></div></section>
+<aside class="side-panel right-panel"><div class="panel-kicker">FIELD GUIDE <span>⌘</span></div><div class="guide-card"><span class="guide-icon">⌖</span><div><strong>Find the descent</strong><p>Explore the halls and seek the gold-lit stairwell.</p></div></div><div class="guide-card"><span class="guide-icon violet">⚔</span><div><strong>Leave none standing</strong><p>The stairs unlock once every creature is defeated.</p></div></div><div class="guide-card"><span class="guide-icon gold">✧</span><div><strong>Claim your boon</strong><p>Choose one of three rewards after each floor.</p></div></div><div class="panel-rule"></div><div class="panel-kicker">CONTROLS</div><div class="controls-list"><div><span>Player I</span><kbd>W A S D</kbd><kbd>SPACE</kbd></div><div><span>Player II</span><kbd>↑ ← ↓ →</kbd><kbd>SHIFT</kbd></div><div><span>Player III</span><kbd>I J K L</kbd><kbd>ENTER</kbd></div><div><span>Everyone</span><kbd>Q</kbd><small>skill</small></div></div><div class="panel-rule"></div><div class="party-coop"><span class="coop-symbol">◎</span><p><strong>Three heroes. One fate.</strong><br>Play together on one keyboard—or guide the whole crew yourself.</p></div></aside>
+</section>
+<footer class="footer"><span>DEEPHOLLOW © 2025</span><span>EVERY DESCENT IS DIFFERENT</span><button id="restart-btn">↻ &nbsp;NEW RUN</button></footer>
+</main>
+<script src="game.js"></script>
+</body></html>
